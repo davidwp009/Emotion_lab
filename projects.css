@@ -215,7 +215,12 @@
 }
 
 /* INPUTS */
-
+.foot__pdf:hover{
+    color: #7950F2;
+}
+.form__mail:hover{
+    color: #7950F2;
+}
 .form__field input {
     width: 100%;
     border: none;

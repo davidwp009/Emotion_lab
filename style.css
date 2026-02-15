@@ -456,7 +456,9 @@
 .form__field input::placeholder {
     color: #242424;
 }
-
+.form__mail:hover{
+    color: #7950F2;
+}
 /* TEXTAREA */
 
 .form__textarea-label {
@@ -526,7 +528,12 @@
     color: #000;
     text-decoration: underline;
 }
-
+.foot__pdf:hover{
+    color: #7950F2;
+}
+.form__mail:hover{
+    color: #7950F2;
+}
 /* ===== BIG LOGO ===== */
 
 .foot__logo {

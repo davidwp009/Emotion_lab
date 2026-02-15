@@ -73,7 +73,12 @@
     color: #7950F2;
 }
 /* ===== FORM SECTION ===== */
-
+.foot__pdf:hover{
+    color: #7950F2;
+}
+.form__mail:hover{
+    color: #7950F2;
+}
 .form{
 margin-top: 58px;
 }

@@ -115,7 +115,12 @@
 }
 
 /* Список */
-
+.foot__pdf:hover{
+    color: #7950F2;
+}
+.form__mail:hover{
+    color: #7950F2;
+}
 .portfolio__list {
     list-style: none;
     padding: 0;
