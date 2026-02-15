@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./contacts.css">
+</head>
+<body>
+    <header class="head">
+<a href="index.html">
+            <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+        </a>
+        <nav class="head__nav">
+            <ul class="head__list">
+                <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
+                <li><a href="projects.html" class="head__tag">Проєкти</a></li>
+                <li><a href="contacts.html" class="head__tag">Контакти</a></li>
+            </ul>
+        </nav>
+
+        <div class="head__lang">
+            <ul class="head__col">
+                <li class="head__row">En</li>
+                <li class="head__row">Ua</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <section class="hero-content">
+        <div class="container hero-content__container">
+            <div class="hero-content__box">
+                <p class="hero-content__text">
+                    Запрошуємо до партнерства тих, хто цінує зміст так само високо,<br>як і результат. Давайте створимо щось важливе.
+                </p>
+            </div>
+        </div>
+        </section>
+        <section class="form">
+        <div class="container">
+            <div class="form__wrapper">
+
+                <!-- LEFT SIDE -->
+                <div class="form__info">
+
+                    <div class="form__label">
+                        <p class="form__lead">Почати спілкування</p>
+                    </div>
+
+                    <h2 class="form__title">
+                        Заповніть форму,<br>
+                        і ми скоро відповімо
+                    </h2>
+
+                    <p class="form__subtitle">
+                        Або напишіть нам на пошту:<br>
+                        <a href="mailto:mail@emotionlab.com.ua">
+                            mail@emotionlab.com.ua
+                        </a>
+                    </p>
+
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="form__content">
+
+                    <form class="form__contact-form" autocomplete="off">
+
+                        <div class="form__field">
+                            <input type="text" placeholder="Ваше ім’я" required>
+                        </div>
+
+                        <div class="form__field">
+                            <input type="email" placeholder="Електронна пошта" required>
+                        </div>
+
+                        <div class="form__field">
+                            <label class="form__textarea-label">Текст повідомлення</label>
+                            <textarea required></textarea>
+                        </div>
+
+                        <button type="submit" class="form__btn">
+                            Відправити
+                        </button>
+
+                    </form>
+
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    </main>
+    <footer class="foot">
+    <div class="container foot__container">
+
+        <!-- PDF -->
+        <p class="foot__text">
+            Також візьміть із собою нашу презентацію:<br>
+            <a href="#" class="foot__pdf">
+                EmotionLab Presentation.pdf
+            </a>
+        </p>
+
+        <!-- BIG LOGO -->
+        <img src="./images/logo-footer.svg" alt="Emotion Lab" class="foot__logo">
+
+        <!-- BOTTOM ROW -->
+        <div class="foot__bottom">
+            <p class="foot__copyright">
+                Copyright © 2026 Emotion lab
+            </p>
+
+            <div class="foot__links">
+                <a href="#" class="foot__link">Legal Information</a>
+                <a href="#" class="foot__link">Privacy & Cookie Policy</a>
+            </div>
+        </div>
+
+    </div>
+</footer>
+</body>
+</html>
