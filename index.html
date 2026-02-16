@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emotion lab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
@@ -85,7 +86,7 @@
                 <p class="portfolio__lead">Що ми робимо</p>
             </div>
 
-            <ul class="portfolio__list">
+            <!--<ul class="portfolio__list">
                 <li class="portfolio__item">
                     <p class="portfolio__row">Комунікаційні проєкти</p>
                 </li>
@@ -104,7 +105,180 @@
                 <li class="portfolio__item">
                     <p class="portfolio__row">Мультимедійні проєкти</p>
                 </li>
-            </ul>
+            </ul>-->
+            <div class="accordion accordion-flush portfolio__accordion" id="portfolioAccordion">
+
+  <!-- ITEM 1 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemOne">
+        Комунікаційні проєкти
+      </button>
+    </h2>
+    <div id="itemOne" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 2 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemTwo">
+        Ділові події, саміти, форуми та конференції
+      </button>
+    </h2>
+    <div id="itemTwo" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 3 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemThree">
+        Культурні та спортивні заходи
+      </button>
+    </h2>
+    <div id="itemThree" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 4 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemFour">
+        Корпоративні комунікаційні рішення та події
+      </button>
+    </h2>
+    <div id="itemFour" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 5 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemFive">
+        Освітні та інформаційні проєкти
+      </button>
+    </h2>
+    <div id="itemFive" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ITEM 6 -->
+  <div class="accordion-item portfolio__item">
+    <h2 class="accordion-header">
+      <button class="accordion-button collapsed portfolio__row"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#itemSix">
+        Мультимедійні проєкти
+      </button>
+    </h2>
+    <div id="itemSix" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+      <div class="accordion-body portfolio__menu">
+        <div class="portfolio__left">
+          <p class="portfolio__inner">
+            Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+            Наші рішення допомагають брендам звучати голосно й залишатися
+            зрозумілими для своєї аудиторії.
+          </p>
+        </div>
+        <div class="portfolio__right">
+          <img src="./images/portfolio-1.svg" class="portfolio__img">
+          <img src="./images/portfolio-2.svg" class="portfolio__img">
+          <img src="./images/portfolio-3.svg" class="portfolio__img">
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
 
             <div class="portfolio__label">
                 <p class="portfolio__lead">Чому з нами</p>
@@ -136,39 +310,51 @@
             <ul class="gallery__list">
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-1svg.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-1svg.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Комунікаційні проєкти</p>
                     <h3 class="gallery__title">Український Олімпійський Дім 2024</h3>
+                    </a>
                 </li>
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-2.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
+                    </a>
                 </li>
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-3.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Мультимедійні проєкти</p>
                     <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
+                    </a>
                 </li>
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-4.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-4.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">75-річчя ФК «Шахтар»</h3>
+                    </a>
                 </li>
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-5.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
+                    </a>
                 </li>
 
                 <li class="gallery__item">
-                    <img src="./images/gallary-6.svg" alt="" class="gallery__img">
+                    <a href="#" class="gallary__item-list">
+                    <img src="./images/gallary-6.svg" alt="#" class="gallery__img">
                     <p class="gallery__subtitle">Мультимедійні проєкти</p>
                     <h3 class="gallery__title">«Корпорантин»</h3>
+                    </a>
                 </li>
 
             </ul>
@@ -267,7 +453,7 @@
 
     </div>
 </footer>
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 </body>
 
 </html>
