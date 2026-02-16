@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./who-we.css">
 </head>
 <body>
@@ -68,13 +69,33 @@
 
 
         <section class="portfolio">
-        <div class="container portfolio__container">
+      <div class="container portfolio__container">
 
-            <div class="portfolio__label">
-                <p class="portfolio__lead">Що ми робимо</p>
-            </div>
+        <div class="portfolio__label">
+          <p class="portfolio__lead">Що ми робимо</p>
+        </div>
 
-            <div class="accordion accordion-flush portfolio__accordion" id="portfolioAccordion">
+        <!--<ul class="portfolio__list">
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Комунікаційні проєкти</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Ділові події, саміти, форуми та конференції</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Культурні та спортивні заходи</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Корпоративні комунікаційні рішення та події</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Освітні та інформаційні проєкти</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Мультимедійні проєкти</p>
+                </li>
+            </ul>-->
+        <div class="accordion accordion-flush portfolio__accordion" id="portfolioAccordion">
 
           <!-- ITEM 1 -->
           <div class="accordion-item portfolio__item">
@@ -234,24 +255,26 @@
 
         </div>
 
-            <div class="portfolio__label">
-                <p class="portfolio__lead">Чому з нами</p>
-            </div>
 
-            <div class="portfolio__box">
-                <p class="portfolio__text">
-                    Наш досвід та експертність у різних напрямках дозволяє
-                    не лише створити ідеї, а й спрогнозувати як вони
-                    працюватимуть для конкретних завдань.
-                </p>
 
-                <p class="portfolio__text">
-                    Ми цінуємо порядність — це наша основа як у власній<br>
-                    роботі, так і у виборі партнерів.
-                </p>
-            </div>
-
+        <div class="portfolio__label">
+          <p class="portfolio__lead">Чому з нами</p>
         </div>
+
+        <div class="portfolio__box">
+          <p class="portfolio__text">
+            Наш досвід та експертність у різних напрямках дозволяє
+            не лише створити ідеї, а й спрогнозувати як вони
+            працюватимуть для конкретних завдань.
+          </p>
+
+          <p class="portfolio__text">
+            Ми цінуємо порядність — це наша основа як у власній<br>
+            роботі, так і у виборі партнерів.
+          </p>
+        </div>
+
+      </div>
     </section>
 
     <section class="form">
@@ -338,6 +361,131 @@
 
     </div>
 </footer>
-    
+<div class="offcanvas offcanvas-end mobile-offcanvas"
+     tabindex="-1"
+     id="mobileMenu">
+
+  <div class="mobile-offcanvas__body">
+
+    <div class="mobile__header">
+    <a href="index.html">
+<div class="head__logo-m"></div>  </a>
+
+    <!-- CLOSE -->
+    <div class="mobile-offcanvas__top">
+      <img src="./images/close-white.svg"
+           class="mobile-offcanvas__close close"
+           data-bs-dismiss="offcanvas"
+           alt="close">
+    </div>
+    </div>
+
+    <!-- NAV -->
+    <ul class="mobile-offcanvas__nav">
+      <li><a href="who-we.html">Хто ми</a></li>
+      <li><a href="projects.html">Проєкти</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+
+    <!-- LANG -->
+    <div class="mobile-offcanvas__lang">
+      <span class="span">En</span>
+      <span class="span">Ua</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="offcanvas offcanvas-end project__offcanvas" tabindex="-1" id="projectModal">
+
+    <div class="offcanvas-body project__body">
+
+      <!-- CLOSE ICON -->
+      <div class="project__header">
+        <img src="./images/close-icon.svg" alt="Close" class="project__close" data-bs-dismiss="offcanvas">
+      </div>
+      <p class="project__subtitle">Комунікаційні проєкти</p>
+
+      <!-- CONTENT -->
+      <h2 class="project__title">
+        Український Олімпійський Дім 2024
+      </h2>
+
+      <p class="project__text">
+        Надважливий проект для України, українського спорту та діалогу України зі світом.<br><br>
+        Спортивне «посольство» стало епіцентром спортивної дипломатії та медіа центром. Площадка щодня пропонувала
+        тисячам відвідувачів: зустрічі з легендами українського та світового спорту, прем’єри фільмів та арт проектів,
+        перфоманси від українських митців зі всього світу, фестивалі української моди, музики
+        та кухні, дискусії щодо актуальних тем та, звісно, зустрічі з учасниками Олімпійської Збірної України.<br><br>
+        Під час Олімпіади «Український Дім Volya Space» гостинно прийняв більше 20 000 відвідувачів, події Volya Space у
+        медіа дали охват 1 500 000 контактів.
+      </p>
+
+      <!-- <p class="project__text">
+      Спортивне «посольство» стало епіцентром спортивної дипломатії та медіа центром.
+      Площа щодня пропонувала тисячам відвідувачів: зустрічі з легендами українського
+      та світового спорту, премʼєри фільмів та арт проектів.
+    </p> -->
+
+      <img src="./images/projects-1.svg" class="project__big-image" alt="">
+      <img src="./images/projects-2.svg" alt="" class="project__big-image">
+      <img src="./images/projects-3.svg" alt="" class="project__big-image">
+      <img src="./images/projects-4.svg" alt="" class="project__big-image">
+      <div class="projects__box">
+        <img src="./images/projects-5.svg" alt="" class="project__big-image-box">
+        <img src="./images/projects-6.svg" alt="" class="project__big-image-box">
+      </div>
+
+      <img src="./images/projects-7.svg" alt="" class="project__big-image">
+      <img src="./images/projects-8.svg" alt="" class="project__big-image">
+
+      <div class="gallery__label">
+        <p class="gallery__lead">Ще проєкти</p>
+      </div>
+
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Мультимедійні проєкти</p>
+            <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
+          </a>
+        </li>
+
+        <li class="gallery__item itemOne">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 </html>

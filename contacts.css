@@ -267,3 +267,374 @@ margin-top: 58px;
 .foot__link:hover {
     text-decoration: underline;
 }
+/* ======================================
+   MOBILE MENU BUTTON
+====================================== */
+
+.mobile-menu-btn {
+    background: none;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 124px;
+}
+
+/* ======================================
+   FULLSCREEN OFFCANVAS
+====================================== */
+
+.mobile-offcanvas {
+    width: 100% !important;
+    max-width: 100%;
+    height: 100vh;
+    border: none;
+    transition: transform 0.5s cubic-bezier(.77,0,.18,1);
+}
+
+.mobile-offcanvas .offcanvas-body {
+    padding: 0;
+}
+
+.mobile-offcanvas__body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 17px 17px 217px 40px;
+    background-color: #7950F2;
+}
+
+/* CLOSE */
+
+.mobile-offcanvas__top {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 80px;
+}
+
+.mobile-offcanvas__close {
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    margin-left: 117px;
+}
+
+.mobile-offcanvas__close:hover {
+    opacity: 0.6;
+}
+
+/* NAV */
+
+.mobile-offcanvas__nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 30px;
+}
+
+.mobile-offcanvas__nav li {
+    margin-bottom: 40px;
+}
+
+.mobile-offcanvas__nav a {
+    font-size: 26px;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* LANG */
+
+.mobile-offcanvas__lang {
+    margin-top: auto;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.span{
+    font-size: 18px;
+    color: #fff;
+}
+/* BACKDROP */
+
+.offcanvas-backdrop.show {
+    opacity: 0.5;
+}
+.mobile__header{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.head__logo-m {
+    height: 25px;
+    width: 180px;
+    background-image: url(./images/white-logo.svg);
+    color: #fff;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {
+
+    .container {
+        margin: 0 auto;
+        padding: 0 16px;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding-top: 134px;
+        padding-bottom: 60px;
+    }
+
+    .hero__title {
+        font-size: 55px;
+        line-height: 60px;
+        text-align: center;
+        margin-bottom: 139px;
+    }
+
+    .hero__sub {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .hero__subtitle {
+        font-size: 16px;
+        letter-spacing: 10%;
+        text-align: center;
+    }
+
+    .hero__icon {
+        font-size: 28px;
+    }
+
+    /* HERO IMAGE BLOCK */
+
+    .hero-content__back {
+        height: 680px;
+        width: 100%;
+    }
+
+    .hero-content__back-subtitle {
+        font-size: 26px;
+        line-height: 28px;
+        left: 16px;
+        bottom: 50px;
+    }
+
+    /* TEXT BLOCK */
+
+    .hero-content__container {
+        margin-top: 40px;
+    }
+
+    .hero-content__text {
+        font-size: 21px;
+        line-height: 32px;
+    }
+
+    /* Прибираємо desktop flex-обмеження */
+    .portfolio__left,
+    .portfolio__right {
+        flex: unset;
+    }
+
+    /* Заголовок акордеону */
+    .portfolio__row {
+        font-size: 20px !important;
+        line-height: 26px;
+        padding: 24px 0 !important;
+    }
+
+    /* Тіло акордеону */
+    .portfolio__menu {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 40px 0;
+        gap: 0;
+    }
+
+    /* Текст */
+    .portfolio__inner {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    /* Блок картинок */
+    .portfolio__right {
+        display: flex;
+        flex-direction: row;      /* ← ГОРИЗОНТАЛЬНО */
+        gap: 7px;
+        margin-top: -110px;         /* ← ВІДСТУП ВІД ТЕКСТУ */
+    }
+
+    /* Картинки */
+    .portfolio__img {
+        width: 110px;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 10px;
+        flex-shrink: 0;
+    }
+    .portfolio__label:last-child{
+        margin-bottom: 0px;
+    }
+    .portfolio__text{
+        font-size: 26px;
+    }
+
+    /* GALLERY */
+
+    .gallery {
+        padding-top: 80px;
+    }
+
+    .gallery__list {
+        grid-template-columns: 1fr;
+        row-gap: 50px;
+    }
+
+    .gallery__img {
+        height: 240px;
+    }
+
+    .gallery__title {
+        font-size: 18px;
+    }
+    .gallery__btn{
+        padding: 16px 130px;
+    }
+
+    /* FORM */
+
+    .form__wrapper {
+        grid-template-columns: 1fr;
+        padding: 60px 20px;
+        row-gap: 50px;
+    }
+
+    .form__title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .form__btn {
+        width: 100%;
+    }
+
+    /* FOOTER */
+
+    .foot__logo {
+        width: 100%;
+    }
+
+    .foot__bottom {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    .foot__links{
+        display: none;
+    }
+    .project__body{
+        padding: 16px;
+    }
+    .project__title{
+        margin-top: 85px;
+    }
+    .project__text{
+        line-height: 22px;
+    }
+    .project__subtitle{
+        margin-top: 6px;
+        font-size: 14px;
+    }
+    .project__big-image-box{    
+        height: 204px;
+    width: 100%;
+    }
+    .itemOne{
+        display: none;
+    }
+    .project__big-image:last-child{
+        margin-bottom: 81px;
+    }
+
+}
+
+@media (max-width: 320px) {
+
+    .container {
+        max-width: 290px;
+    }
+
+    .hero__title {
+        font-size: 34px;
+    }
+
+    .hero-content__back {
+        height: 380px;
+    }
+
+    .hero-content__back-subtitle {
+        font-size: 18px;
+        line-height: 22px;
+        max-width: 220px;
+    }
+
+    .hero-content__text {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .portfolio__row {
+        font-size: 18px !important;
+        line-height: 24px;
+    }
+
+    .portfolio__inner {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .portfolio__right {
+        gap: 8px;
+        margin-top: 35px;
+    }
+
+    .portfolio__img {
+        width: 100px;
+        height: 180px;
+        border-radius: 10px;
+    }
+
+    .gallery__img {
+        height: 200px;
+    }
+
+    .form__title {
+        font-size: 24px;
+    }
+    .mobile-menu-btn{
+        margin-left: 105px;
+    }
+
+}

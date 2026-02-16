@@ -94,10 +94,6 @@
 
 /* SECTION */
 
-.portfolio {
-    padding-top: 107px;
-}
-
 /* Лейбл (чорна капсула) */
 
 .portfolio__label {
@@ -132,7 +128,6 @@
 }
 
 .portfolio__item {
-    padding: 32px 0;
     border-bottom: 1px solid #D6D6D6;
 }
 
@@ -551,6 +546,15 @@ margin-top: 138px;
 }
 .mobile__header{
     display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+.head__logo-m {
+    height: 25px;
+    width: 180px;
+    background-image: url(./images/white-logo.svg);
+    color: #fff;
+    background-repeat: no-repeat;
 }
 
 
@@ -568,6 +572,14 @@ margin-top: 138px;
     .container {
         margin: 0 auto;
         padding: 0 16px;
+    }
+    .head{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
     }
 
     /* HERO */
@@ -805,6 +817,9 @@ margin-top: 138px;
 
     .form__title {
         font-size: 24px;
+    }
+    .mobile-menu-btn{
+        margin-left: 105px;
     }
 
 }
