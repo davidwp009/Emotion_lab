@@ -2,35 +2,52 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Company</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./who-we.css">
 </head>
 <body>
     <header class="head">
-<a href="index.html">
-            <img src="./images/logo-header.svg" alt="logo" class="head__logo">
-        </a>
-        <nav class="head__nav">
-            <ul class="head__list">
-                <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
-                <li><a href="projects.html" class="head__tag">Проєкти</a></li>
-                <li><a href="contacts.html" class="head__tag">Контакти</a></li>
-            </ul>
-        </nav>
+    <a href="index.html">
+      <div class="head__logo"></div>
+    </a>
 
-        <div class="head__lang">
-            <ul class="head__col">
-                <li class="head__row">En</li>
-                <li class="head__row">Ua</li>
-            </ul>
-        </div>
-    </header>
+  <!-- <a href="index.html">
+    <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+  </a> -->
+
+  <!-- Desktop nav -->
+  <nav class="head__nav d-none d-lg-block">
+    <ul class="head__list">
+      <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
+      <li><a href="projects.html" class="head__tag">Проєкти</a></li>
+      <li><a href="contacts.html" class="head__tag">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <div class="head__lang d-none d-lg-block">
+    <ul class="head__col">
+      <li class="head__row">En</li>
+      <li class="head__row">Ua</li>
+    </ul>
+  </div>
+
+  <!-- Mobile button -->
+  <button class="mobile-menu-btn d-lg-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu">
+      Меню
+  </button>
+
+</header>
+
     <main>
         <section class="hero-content">
         <div class="container hero-content__container">
@@ -57,26 +74,165 @@
                 <p class="portfolio__lead">Що ми робимо</p>
             </div>
 
-            <ul class="portfolio__list">
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Комунікаційні проєкти</p>
-                </li>
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Ділові події, саміти, форуми та конференції</p>
-                </li>
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Культурні та спортивні заходи</p>
-                </li>
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Корпоративні комунікаційні рішення та події</p>
-                </li>
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Освітні та інформаційні проєкти</p>
-                </li>
-                <li class="portfolio__item">
-                    <p class="portfolio__row">Мультимедійні проєкти</p>
-                </li>
-            </ul>
+            <div class="accordion accordion-flush portfolio__accordion" id="portfolioAccordion">
+
+          <!-- ITEM 1 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemOne">
+                Комунікаційні проєкти
+              </button>
+            </h2>
+            <div id="itemOne" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemTwo">
+                Ділові події, саміти, форуми та конференції
+              </button>
+            </h2>
+            <div id="itemTwo" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 3 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemThree">
+                Культурні та спортивні заходи
+              </button>
+            </h2>
+            <div id="itemThree" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 4 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemFour">
+                Корпоративні комунікаційні рішення та події
+              </button>
+            </h2>
+            <div id="itemFour" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 5 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemFive">
+                Освітні та інформаційні проєкти
+              </button>
+            </h2>
+            <div id="itemFive" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ITEM 6 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemSix">
+                Мультимедійні проєкти
+              </button>
+            </h2>
+            <div id="itemSix" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
 
             <div class="portfolio__label">
                 <p class="portfolio__lead">Чому з нами</p>

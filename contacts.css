@@ -12,7 +12,11 @@
 /* Логотип */
 .head__logo {
     height: 25px;
-    object-fit: contain;
+    width: 180px;
+    background-image: url(./images/logo-header.svg);
+}
+.head__logo:hover{
+    background-image: url(./images/hover-heder-logo.svg);
 }
 
 /* Меню */

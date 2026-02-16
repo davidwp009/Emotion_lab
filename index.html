@@ -18,24 +18,38 @@
 <body>
   <header class="head">
     <a href="index.html">
-      <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+      <div class="head__logo"></div>
     </a>
 
-    <nav class="head__nav">
-      <ul class="head__list">
-        <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
-        <li><a href="projects.html" class="head__tag">Проєкти</a></li>
-        <li><a href="contacts.html" class="head__tag">Контакти</a></li>
-      </ul>
-    </nav>
+  <!-- <a href="index.html">
+    <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+  </a> -->
 
-    <div class="head__lang">
-      <ul class="head__col">
-        <li class="head__row">En</li>
-        <li class="head__row">Ua</li>
-      </ul>
-    </div>
-  </header>
+  <!-- Desktop nav -->
+  <nav class="head__nav d-none d-lg-block">
+    <ul class="head__list">
+      <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
+      <li><a href="projects.html" class="head__tag">Проєкти</a></li>
+      <li><a href="contacts.html" class="head__tag">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <div class="head__lang d-none d-lg-block">
+    <ul class="head__col">
+      <li class="head__row">En</li>
+      <li class="head__row">Ua</li>
+    </ul>
+  </div>
+
+  <!-- Mobile button -->
+  <button class="mobile-menu-btn d-lg-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu">
+      Меню
+  </button>
+
+</header>
+
 
 
   <main>
@@ -447,6 +461,53 @@
     </div>
   </footer>
 
+
+<div class="offcanvas offcanvas-end mobile-offcanvas"
+     tabindex="-1"
+     id="mobileMenu">
+
+  <div class="mobile-offcanvas__body">
+
+    <div class="mobile__header">
+    <a href="index.html">
+<div class="head__logo"></div>  </a>
+
+    <!-- CLOSE -->
+    <div class="mobile-offcanvas__top">
+      <img src="./images/close-white.svg"
+           class="mobile-offcanvas__close close"
+           data-bs-dismiss="offcanvas"
+           alt="close">
+    </div>
+    </div>
+
+    <!-- NAV -->
+    <ul class="mobile-offcanvas__nav">
+      <li><a href="who-we.html">Хто ми</a></li>
+      <li><a href="projects.html">Проєкти</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+
+    <!-- LANG -->
+    <div class="mobile-offcanvas__lang">
+      <span class="span">En</span>
+      <span class="span">Ua</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
   <div class="offcanvas offcanvas-end project__offcanvas" tabindex="-1" id="projectModal">
 
     <div class="offcanvas-body project__body">
@@ -482,44 +543,44 @@
       <img src="./images/projects-2.svg" alt="" class="project__big-image">
       <img src="./images/projects-3.svg" alt="" class="project__big-image">
       <img src="./images/projects-4.svg" alt="" class="project__big-image">
-<div class="projects__box">
-      <img src="./images/projects-5.svg" alt="" class="project__big-image-box">
-      <img src="./images/projects-6.svg" alt="" class="project__big-image-box">
+      <div class="projects__box">
+        <img src="./images/projects-5.svg" alt="" class="project__big-image-box">
+        <img src="./images/projects-6.svg" alt="" class="project__big-image-box">
       </div>
 
       <img src="./images/projects-7.svg" alt="" class="project__big-image">
       <img src="./images/projects-8.svg" alt="" class="project__big-image">
 
       <div class="gallery__label">
-          <p class="gallery__lead">Ще проєкти</p>
-        </div>
+        <p class="gallery__lead">Ще проєкти</p>
+      </div>
 
       <ul class="gallery__list">
-          <li class="gallery__item">
-            <a href="#" class="gallary__item-list">
-              <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
-              <p class="gallery__subtitle">Культурні та спортивні заходи</p>
-              <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
-            </a>
-          </li>
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
+          </a>
+        </li>
 
-          <li class="gallery__item">
-            <a href="#" class="gallary__item-list">
-              <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
-              <p class="gallery__subtitle">Мультимедійні проєкти</p>
-              <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
-            </a>
-          </li>
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Мультимедійні проєкти</p>
+            <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
+          </a>
+        </li>
 
-          <li class="gallery__item">
-            <a href="#" class="gallary__item-list">
-              <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
-              <p class="gallery__subtitle">Культурні та спортивні заходи</p>
-              <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
-            </a>
-          </li>
+        <li class="gallery__item itemOne">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
+          </a>
+        </li>
 
-        </ul>
+      </ul>
 
     </div>
   </div>

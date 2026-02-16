@@ -2,36 +2,51 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
-        rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./projects.css">
 </head>
 <body>
     <header class="head">
-<a href="index.html">
-            <img src="./images/logo-header.svg" alt="logo" class="head__logo">
-        </a>
-        <nav class="head__nav">
-            <ul class="head__list">
-                <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
-                <li><a href="projects.html" class="head__tag">Проєкти</a></li>
-                <li><a href="contacts.html" class="head__tag">Контакти</a></li>
-            </ul>
-        </nav>
+    <a href="index.html">
+      <div class="head__logo"></div>
+    </a>
 
-        <div class="head__lang">
-            <ul class="head__col">
-                <li class="head__row">En</li>
-                <li class="head__row">Ua</li>
-            </ul>
-            
-        </div>
-    </header>
+  <!-- <a href="index.html">
+    <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+  </a> -->
+
+  <!-- Desktop nav -->
+  <nav class="head__nav d-none d-lg-block">
+    <ul class="head__list">
+      <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
+      <li><a href="projects.html" class="head__tag">Проєкти</a></li>
+      <li><a href="contacts.html" class="head__tag">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <div class="head__lang d-none d-lg-block">
+    <ul class="head__col">
+      <li class="head__row">En</li>
+      <li class="head__row">Ua</li>
+    </ul>
+  </div>
+
+  <!-- Mobile button -->
+  <button class="mobile-menu-btn d-lg-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu">
+      Меню
+  </button>
+
+</header>
     <main>
         <section class="hero-content">
         <div class="container hero-content__container">
