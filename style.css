@@ -11,13 +11,36 @@
 
 /* Логотип */
 .head__logo {
+    position: relative;
+    height: 25px;
+    width: 180px;
+    overflow: hidden;
+    cursor: pointer;
+
+    -webkit-mask: url(./images/logo-header.svg) no-repeat center;
+    -webkit-mask-size: contain;
+
+    mask: url(./images/logo-header.svg) no-repeat center;
+    mask-size: contain;
+}
+
+.logo-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+/*.head__logo {
     height: 25px;
     width: 180px;
     background-image: url(./images/logo-header.svg);
-}
-.head__logo:hover{
+}*/
+/*.head__logo:hover{
     background-image: url(./images/hover-heder-logo.svg);
-}
+}*/
 /* Меню */
 .head__nav {
     margin-left: auto;
