@@ -21,7 +21,6 @@
 /* Меню */
 .head__nav {
     margin-left: auto;
-    /* зсуваємо меню вправо */
 }
 
 .head__list {
@@ -42,7 +41,6 @@
 /* Мови */
 .head__lang {
     margin-left: 61px;
-    /* ← ТОЧНИЙ відступ між nav і мовами */
 }
 
 .head__col {
@@ -87,7 +85,6 @@
     margin: 0 0 232px 0;
     max-width: 1100px;
     align-self: center;
-    /* щоб центр працював */
 }
 
 /* Нижній блок */
@@ -95,10 +92,8 @@
 .hero__sub {
     display: flex;
     justify-content: space-between;
-    /* ← розкидає по краях */
     align-items: center;
     width: 100%;
-    /* ← 50px від країв */
     box-sizing: border-box;
 }
 
@@ -115,7 +110,6 @@
 
 /*HERO-CONTANT*/
 
-/* SECTION */
 
 .hero-content {
     width: 100%;
@@ -167,7 +161,6 @@
 } */
 
 
-/* Текст на фоні */
 
 .hero-content__back-subtitle {
     font-size: 35px;
@@ -178,7 +171,6 @@
     margin: 0;
 }
 
-/* Текстовий блок під картинкою */
 
 .hero-content__container {
     margin-top: 60px;
@@ -202,13 +194,11 @@
 
 /*PORTFOLIO*/
 
-/* SECTION */
 
 .portfolio {
     padding-top: 212pxpx;
 }
 
-/* Лейбл (чорна капсула) */
 
 .portfolio__label {
     display: inline-flex;
@@ -223,15 +213,13 @@
 }
 
 .portfolio__lead {
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
     margin: 0;
 }
 
-/* =========================================
-   ACCORDION BASE
-========================================= */
+
 
 .portfolio__accordion {
     margin: 37px 0 138px 0;
@@ -261,20 +249,18 @@
     color: #000;
 }
 
-/* Прибираємо стрілку */
 
 .portfolio__accordion .accordion-button::after {
     display: none !important;
 }
 
-/* Заголовок */
 
 .portfolio__row {
     font-size: 29px !important;
     font-weight: 400;
     line-height: 32px;
     color: #000;
-    display: inline-block;   /* ВАЖЛИВО */
+    display: inline-block;   
     transform-origin: center center; /* Центр масштабу */
     transition: transform 0.35s ease, box-shadow 0.35s ease;
 }
@@ -282,10 +268,10 @@
     transform: scale(1.08);
     box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
-/* =========================================
-   BODY LAYOUT
-========================================= */
 
+.portfolio__accordion .accordion-button{
+    padding-left: 20px;
+}
 .portfolio__accordion .accordion-body {
     padding: 0px 0px 38px 0px;
 }
@@ -298,9 +284,7 @@
     padding: 40px 0 60px 0;
 }
 
-/* =========================================
-   LEFT SIDE (TEXT)
-========================================= */
+
 
 .portfolio__left {
     flex: 0 0 45%;
@@ -311,11 +295,10 @@
     line-height: 28px;
     font-weight: 400;
     margin: 0px 0px 150px 0px;
+    padding-left: 20px;
 }
 
-/* =========================================
-   RIGHT SIDE (IMAGES)
-========================================= */
+
 
 .portfolio__right {
     flex: 0 0 45%;
@@ -331,9 +314,6 @@
     display: block;
 }
 
-/* =========================================
-   OPTIONAL SMOOTHER OPEN ANIMATION
-========================================= */
 
 .accordion-collapse {
     transition: height 0.35s ease;
@@ -381,14 +361,11 @@
 
 /*GALLARY*/
 
-/* ===== GALLERY SECTION ===== */
-
 .gallery {
     padding-top: 149px;
     padding-bottom: 92px;
 }
 
-/* LABEL */
 
 .gallery__label {
     display: inline-flex;
@@ -403,7 +380,7 @@
 }
 
 .gallery__lead {
-    font-size: 11px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
     margin: 0;
@@ -414,18 +391,14 @@
 .gallery__list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-
     row-gap: 77px;
-    /* ← між рядками */
     column-gap: 26px;
-    /* ← між стовпцями */
-
     list-style: none;
     padding: 0;
     margin: 0 0 80px 0;
 }
 
-/* ITEM */
+
 
 .gallery__item {
     display: flex;
@@ -441,7 +414,7 @@
     margin-bottom: 15px;
 }
 
-/* CATEGORY */
+
 
 .gallery__subtitle {
     font-size: 12px;
@@ -452,7 +425,6 @@
     margin: 0 0 8px 0;
 }
 
-/* TITLE */
 
 .gallery__title {
     font-size: 20px;
@@ -468,7 +440,7 @@
 }
 
 .gallery__btn {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
     color: #fff;
 
@@ -486,11 +458,7 @@
     color: #000;
 }
 
-/*FORM*/
 
-/* ===== SECTION ===== */
-
-/* ===== FORM SECTION ===== */
 
 
 .form__wrapper {
@@ -502,7 +470,7 @@
     align-items: start;
 }
 
-/* ===== LEFT SIDE ===== */
+
 
 .form__label {
     display: inline-flex;
@@ -513,7 +481,7 @@
 }
 
 .form__lead {
-    font-size: 11px;
+    font-size: 18px;
     color: #fff;
     margin: 0;
 }
@@ -531,7 +499,7 @@
     margin: 0;
 }
 
-/* ===== RIGHT SIDE ===== */
+
 
 .form__contact-form {
     flex-direction: column;
@@ -539,19 +507,19 @@
 
 }
 
-/* ❌ прибрали старий margin-top:165px */
 
-/* 40px між Name і Email */
+
+
 .form__field:nth-child(2) {
     margin-top: 40px;
 }
 
-/* 62px між Email і Comment */
+
 .form__field:nth-child(3) {
     margin-top: 62px;
 }
 
-/* INPUTS */
+
 
 .form__field input {
     width: 100%;
@@ -563,10 +531,9 @@
     outline: none;
 }
 
-/* ВАЖЛИВО — підганяємо baseline */
+
 .form__field:first-child input {
     margin-top: 8px;
-    /* точне підбиття по тексту */
 }
 
 .form__field input::placeholder {
@@ -577,7 +544,7 @@
     color: #7950F2;
 }
 
-/* TEXTAREA */
+
 
 .form__textarea-label {
     font-size: 16px;
@@ -597,7 +564,7 @@
     outline: none;
 }
 
-/* 35px від коментаря до кнопки */
+
 .form__btn {
     margin-top: 35px;
 
@@ -607,7 +574,7 @@
 
     background: #7950F2;
     color: #fff;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
     transition: 0.3s ease;
 }
@@ -617,16 +584,13 @@
     background-color: #434343;
 }
 
-/* 77px до низу контейнера */
+
 .form__contact-form::after {
     content: "";
     display: block;
 }
 
-/*FOOTER*/
-/* ========================
-   FOOTER
-======================== */
+
 
 .foot {
     background-color: #fff;
@@ -638,7 +602,7 @@
     flex-direction: column;
 }
 
-/* ===== PDF TEXT ===== */
+
 
 .foot__text {
     font-size: 14px;
@@ -658,14 +622,14 @@
     color: #7950F2;
 }
 
-/* ===== BIG LOGO ===== */
+
 
 .foot__logo {
     width: 994px;
     margin-bottom: 31px;
 }
 
-/* ===== BOTTOM ROW ===== */
+
 
 .foot__bottom {
     display: flex;
@@ -696,10 +660,6 @@
 
 
 
-/* ===============================
-   OFFCANVAS CUSTOM
-================================= */
-
 .project__offcanvas {
     width: 1000px !important;
     max-width: 100%;
@@ -716,13 +676,13 @@
     transform: translateX(0);
 } */
 
-/* body */
+
 .project__body {
     padding: 23px 32px 23px 64px;
     position: relative;
 }
 
-/* close */
+
 .project__header {
     position: absolute;
     top: 23px;
@@ -747,14 +707,14 @@
 
 }
 
-/* title */
+
 .project__title {
     font-size: 25px;
     font-weight: 500;
     margin-bottom: 30px;
 }
 
-/* text */
+
 .project__text {
     font-size: 15px;
     line-height: 20px;
@@ -762,7 +722,6 @@
     max-width: 520px;
 }
 
-/* big image */
 .project__big-image {
     width: 100%;
     border-radius: 12px;
@@ -779,7 +738,6 @@
     border-radius: 12px;
 }
 
-/* затемнення фону */
 .offcanvas-backdrop.show {
     opacity: 0.5;
 }
@@ -801,9 +759,7 @@
 
 
 
-/* ======================================
-   MOBILE MENU BUTTON
-====================================== */
+
 
 .mobile-menu-btn {
     background: none;
@@ -813,9 +769,7 @@
     margin-left: 124px;
 }
 
-/* ======================================
-   FULLSCREEN OFFCANVAS
-====================================== */
+
 
 .mobile-offcanvas {
     width: 100% !important;
@@ -837,7 +791,6 @@
     background-color: #7950F2;
 }
 
-/* CLOSE */
 
 .mobile-offcanvas__top {
     display: flex;
@@ -857,7 +810,6 @@
     opacity: 0.6;
 }
 
-/* NAV */
 
 .mobile-offcanvas__nav {
     list-style: none;
@@ -876,7 +828,6 @@
     color: #fff;
 }
 
-/* LANG */
 
 .mobile-offcanvas__lang {
     margin-top: auto;
@@ -888,7 +839,6 @@
     font-size: 18px;
     color: #fff;
 }
-/* BACKDROP */
 
 .offcanvas-backdrop.show {
     opacity: 0.5;
@@ -930,8 +880,17 @@
         padding-right: 15px;
         padding-top: 15px;
     }
+    .hero-content__box{
+        margin-bottom: 110px;
+    }
+    .portfolio__accordion{
+        margin-bottom: 70px;
+    }
+    .portfolio__box{
+        margin-top: 0px;
+    }
 
-    /* HERO */
+    
 
     .hero {
         padding-top: 134px;
@@ -960,8 +919,7 @@
         font-size: 28px;
     }
 
-    /* HERO IMAGE BLOCK */
-
+    
     .hero-content__back {
         height: 680px;
         width: 100%;
@@ -974,7 +932,7 @@
         bottom: 50px;
     }
 
-    /* TEXT BLOCK */
+    
 
     .hero-content__container {
         margin-top: 40px;
@@ -985,20 +943,19 @@
         line-height: 32px;
     }
 
-    /* Прибираємо desktop flex-обмеження */
+    
     .portfolio__left,
     .portfolio__right {
         flex: unset;
     }
 
-    /* Заголовок акордеону */
+    
     .portfolio__row {
         font-size: 20px !important;
         line-height: 26px;
         padding: 24px 0 !important;
     }
 
-    /* Тіло акордеону */
     .portfolio__menu {
         display: flex;
         flex-direction: column;
@@ -1006,21 +963,20 @@
         gap: 0;
     }
 
-    /* Текст */
+    
     .portfolio__inner {
         font-size: 18px;
         line-height: 28px;
     }
 
-    /* Блок картинок */
+    
     .portfolio__right {
         display: flex;
-        flex-direction: row;      /* ← ГОРИЗОНТАЛЬНО */
+        flex-direction: row;      
         gap: 7px;
-        margin-top: -110px;         /* ← ВІДСТУП ВІД ТЕКСТУ */
+        margin-top: -110px;         
     }
 
-    /* Картинки */
     .portfolio__img {
         width: 110px;
         height: 200px;
@@ -1035,7 +991,7 @@
         font-size: 26px;
     }
 
-    /* GALLERY */
+    
 
     .gallery {
         padding-top: 80px;
@@ -1057,7 +1013,7 @@
         padding: 16px 130px;
     }
 
-    /* FORM */
+    
 
     .form__wrapper {
         grid-template-columns: 1fr;
