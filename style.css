@@ -14,20 +14,9 @@
     background-image: url(./images/logo-header.svg);
     width: 180px;
     height: 25px;
-    /* position: relative;
-    height: 25px;
-    width: 180px;
-    overflow: hidden;
-    cursor: pointer;
-
-    -webkit-mask: url(./images/logo-header.svg) no-repeat center;
-    -webkit-mask-size: contain;
-
-    mask: url(./images/logo-header.svg) no-repeat center;
-    mask-size: contain; */
 }
 .head__logo:hover{
-    background-image: url(./Animation-Big-180:25.gif);
+    background-image: url(./Animation-Big.gif);
     width: 180px;
     height: 25px;
 }
