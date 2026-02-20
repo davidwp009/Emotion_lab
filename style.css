@@ -11,12 +11,18 @@
 
 /* Логотип */
 .head__logo {
-    background-image: url(./images/logo-header.svg);
+    background-image: url(./images/logo-footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 180px;
     height: 25px;
 }
 .head__logo:hover{
     background-image: url(./Animation-Big.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 180px;
     height: 25px;
 }
@@ -653,8 +659,21 @@
 
 
 .foot__logo {
+    background-image: url(./images/logo-footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 994px;
+    height: 142px;
     margin-bottom: 31px;
+}
+.foot__logo:hover{
+    background-image: url(./Animation-Big.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 994px;
+    height: 142px;
 }
 
 
