@@ -1,191 +1,603 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Emotion-lab</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emotion lab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:ital,wght@0,400..700;1,400..700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <header class="head">
-        <svg class="head__img">
-            <use href="./images/logo-header.svg"></use>
-        </svg>
-        <div class="head__box">
-            <ul class="head__list">
-                <li class="head__list">
-                    <a href="#" class="head__bar">Хто ми</a>
-                </li>
-                <li class="head__list">
-                    <a href="#" class="head__bar">Проєкти</a>
-                </li>
-                <li class="head__list">
-                    <a href="#" class="head__bar">Контакти</a>
-                </li>
-            </ul>
+  <header class="head">
+    <a href="index.html">
+  <div class="head__logo">
+    <!-- <img src="./Animation-Small.gif" alt="" class="gif">
+    <img src="./images/logo-header.svg" alt="" class="logo"> -->
+    <!-- <video class="logo-video" muted playsinline>
+      <source src="./Animation-Small.gif" type="video/mp4">
+    </video> -->
+  </div>
+</a>
+
+  <!-- <a href="index.html">
+    <img src="./images/logo-header.svg" alt="logo" class="head__logo">
+  </a> -->
+
+  <!-- Desktop nav -->
+  <nav class="head__nav d-none d-lg-block">
+    <ul class="head__list">
+      <li><a href="who-we.html" class="head__tag">Хто ми</a></li>
+      <li><a href="projects.html" class="head__tag">Проєкти</a></li>
+      <li><a href="contacts.html" class="head__tag">Контакти</a></li>
+    </ul>
+  </nav>
+
+  <div class="head__lang d-none d-lg-block">
+    <ul class="head__col">
+      <li class="head__row">En</li>
+      <li class="head__row">Ua</li>
+    </ul>
+  </div>
+
+  <!-- Mobile button -->
+  <button class="mobile-menu-btn d-lg-none"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#mobileMenu">
+      Меню
+  </button>
+
+</header>
+
+
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero__container">
+
+        <h1 class="hero__title">
+          Ми створюємо<br>проєкти із сенсами
+        </h1>
+
+        <div class="hero__sub">
+          <p class="hero__subtitle">Україна, Європа, весь світ</p>
+          <p class="hero__icon">🪄✨</p>
         </div>
-        <div class="head__len">
-            <ul class="head__len-list">
-                <li class="head__len-item">
-                    <a href="#" class="head__language">En</a>
-                </li>
-                <li class="head__len-item">
-                    <a href="#" class="head__language">Ua</a>
-            </ul>
+
+      </div>
+    </section>
+
+    <section class="hero-content">
+      <div class="hero-content__back">
+        <div class="container">
+          <p class="hero-content__back-subtitle">
+            Давайте створимо для вас <br>
+            щось неперевершене
+          </p>
+        </div>
+      </div>
+
+      <div class="container hero-content__container">
+        <div class="hero-content__box">
+          <p class="hero-content__text">
+            EmotionLab — це екосистема професіоналів, які створюють<br>унікальні та ефективні рішення у сфері
+            комунікацій, маркетингу,<br>PR, івенту, продакшену та медіа.
+          </p>
+
+          <p class="hero-content__text">
+            За 20+ років ми створили 200+ проєктів з охопленням понад 100<br>000 000 людей. Ми розробляємо та
+            реалізуємо ідеї в різних<br>напрямках та формуємо професійні команди по всьому світу.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="container portfolio__container">
+
+        <div class="portfolio__label">
+          <p class="portfolio__lead">Що ми робимо</p>
         </div>
 
-    </header>
-    <main>
-        <section class="hero">
-            <div class="container hero__container">
-                <h1>Ми створюємо проєкти із сенсами</h1>
-                <div class="hero__title">
-                    <p class="hero__subtitle">Україна, Європа, весь світ</p>
-                    <p class="hero__subtitle">🪄✨</p>
+        <!--<ul class="portfolio__list">
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Комунікаційні проєкти</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Ділові події, саміти, форуми та конференції</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Культурні та спортивні заходи</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Корпоративні комунікаційні рішення та події</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Освітні та інформаційні проєкти</p>
+                </li>
+                <li class="portfolio__item">
+                    <p class="portfolio__row">Мультимедійні проєкти</p>
+                </li>
+            </ul>-->
+        <div class="accordion accordion-flush portfolio__accordion" id="portfolioAccordion">
+
+          <!-- ITEM 1 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemOne">
+                Комунікаційні проєкти
+              </button>
+            </h2>
+            <div id="itemOne" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
                 </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="hero-content">
-            <div class="container">
-                <div class="hero-content__back">
-                    <p class="hero-content__title">Давайте створимо для вас щось неперевершене</p>
+          </div>
+
+          <!-- ITEM 2 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemTwo">
+                Ділові події, саміти, форуми та конференції
+              </button>
+            </h2>
+            <div id="itemTwo" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
                 </div>
-                <ul class="hero-content__list">
-                    <li class="hero-content__item">
-                        <p class="hero-content__subtitle">EmotionLab — це екосистема професіоналів , які створюють унікальні та ефективні рішення у сфері комунікацій, маркетингу, PR, івенту, продакшену та медіа.</p>
-                    </li>
-                    <li class="hero-content__item">
-                        <p class="hero-content__subtitle">За 20+ років ми створили 200+ проєктів з охопленням понад 100 000 000 людей. Мы розробляємо та реалізуємо ідеї в різних напрямках та формуємо професійні команди по всьому світу.</p>
-                    </li>
-                </ul>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="portfolio">
-            <div class="container">
-                <div class="portfolio__accent">
-                    <p class="portfolio__hidden">Що ми робимо</p>
-                </div>
-                <ul class="portfolio__list">
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Комунікаційні проєкти</p>
-                    </li>
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Ділові події, саміти, форуми та конференції</p>
-                    </li>
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Культурні та спортивні заходи</p>
-                    </li>
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Корпоративні комунікаційні рішення та події</p>
-                    </li>
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Освітні та інформаційні проєкти</p>
-                    </li>
-                    <li class="portfolio__item">
-                        <p class="porfolio__tag">Мультимедійні проєкти</p>
-                    </li>
-                </ul>
+          </div>
 
-                <div class="portfolio__accent-2">
-                    <p class="portfolio__hidden">Що ми робимо</p>
+          <!-- ITEM 3 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemThree">
+                Культурні та спортивні заходи
+              </button>
+            </h2>
+            <div id="itemThree" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
                 </div>
-
-                <ul class="portfolio__list-2">
-                    <li class="portfolio__item-2">
-                        <p class="portfolio__text">Наш досвід та експертність у різних напрямках дозволяє не лише створити ідеї, а й спрогнозувати як вони працюватимуть для конкретних завдань.</p>
-                    </li>
-                    <li class="portfolio__item-2">
-                        <p class="portfolio__text">Ми цінуємо порядність — це наша основа як у власній роботі, так і у виборі партнерів.</p>
-                    </li>
-                </ul>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
             </div>
-        </section>
-        <section class="gallary">
-            <div class="container gallary__container">
+          </div>
 
-                <div class="gallary__accent">
-                    <p class="gallary__hidden">Що ми робимо</p>
+          <!-- ITEM 4 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemFour">
+                Корпоративні комунікаційні рішення та події
+              </button>
+            </h2>
+            <div id="itemFour" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
                 </div>
-
-                <div class="gallary__list">
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Комунікаційні проєкти</p>
-                        <h3 class="gallary__title">Український Олімпійський Дім 2024</h3>
-                    </div>
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Культурні та спортивні заходи</p>
-                        <h3 class="gallary__title">Фінал Ліги Чемпіонів 2018</h3>
-                    </div>
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Мультимедійні проєкти</p>
-                        <h3 class="gallary__title">Імерсивна виставка Art of Steel</h3>
-                    </div>
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Культурні та спортивні заходи</p>
-                        <h3 class="gallary__title">75-річчя ФК «Шахтар»</h3>
-                    </div>
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Культурні та спортивні заходи</p>
-                        <h3 class="gallary__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
-                    </div>
-                    <div class="gallary__item">
-                        <img src="" alt="#" class="gallary__img">
-                        <p class="gallary__subtitle">Мультимедійні проєкти</p>
-                        <h3 class="gallary__title">«Корпорантин»</h3>
-                    </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
                 </div>
-                <a href="#" class="btn">Ще проекти</a>
+              </div>
             </div>
-        </section>
-        <section class="form">
-            <div class="container form__container">
-                <div class="form__info">
-                    <div class="form__accent">
-                    <p class="gallary__hidden">Що ми робимо</p>
-                </div>
-                <h2 class="form__title">Заповніть форму, і ми скоро відповімо</h2>
-                <p class="form__subtitle">Або напишіть нам на пошту:</p>
-                <p class="form__subtitle_">mail@emotionlab.com.ua</p>
-                </div>
+          </div>
 
-
-                <div class="form__card">
-                    <form action="#" class="form__card-form">
-                      <label for="name"></label>
-                      <input type="text">
-                      <label for="email"></label>
-                      <input type="email">
-                      <label for="text"></label>
-                      <input type="text">                        
-                    </form>
-                    <a href="#" class="form__card-btn">Відправити</a>
+          <!-- ITEM 5 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemFive">
+                Освітні та інформаційні проєкти
+              </button>
+            </h2>
+            <div id="itemFive" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
                 </div>
-
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
             </div>
-        </section>
+          </div>
 
-    </main>
-    <footer>
-        <p class="foot__title">Також візьміть із собою нашу презентацію:
-            <a href="#" class="foot__pdf">EmotionLab Presentation.pdf</a>
+          <!-- ITEM 6 -->
+          <div class="accordion-item portfolio__item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed portfolio__row" type="button" data-bs-toggle="collapse"
+                data-bs-target="#itemSix">
+                Мультимедійні проєкти
+              </button>
+            </h2>
+            <div id="itemSix" class="accordion-collapse collapse" data-bs-parent="#portfolioAccordion">
+              <div class="accordion-body portfolio__menu">
+                <div class="portfolio__left">
+                  <p class="portfolio__inner">
+                    Ми створюємо ідеї, які будують взаємодію, довіру і партнерські стосунки.
+                    Наші рішення допомагають брендам звучати голосно й залишатися
+                    зрозумілими для своєї аудиторії.
+                  </p>
+                </div>
+                <div class="portfolio__right">
+                  <img src="./images/portfolio-1.svg" class="portfolio__img">
+                  <img src="./images/portfolio-2.svg" class="portfolio__img">
+                  <img src="./images/portfolio-3.svg" class="portfolio__img">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+        <div class="portfolio__label">
+          <p class="portfolio__lead">Чому з нами</p>
+        </div>
+
+        <div class="portfolio__box">
+          <p class="portfolio__text">
+            Наш досвід та експертність у різних напрямках дозволяє
+            не лише створити ідеї, а й спрогнозувати як вони
+            працюватимуть для конкретних завдань.
+          </p>
+
+          <p class="portfolio__text">
+            Ми цінуємо порядність — це наша основа як у власній<br>
+            роботі, так і у виборі партнерів.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container gallery__container">
+
+        <div class="gallery__label">
+          <p class="gallery__lead">Обрані проєкти</p>
+        </div>
+
+        <ul class="gallery__list">
+
+          <li class="gallery__item">
+
+            <a href="#" data-bs-toggle="offcanvas" data-bs-target="#projectModal" class="gallery__item-list">
+
+              <img src="./images/gallary-1svg.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Комунікаційні проєкти</p>
+              <h3 class="gallery__title">Український Олімпійський Дім 2024</h3>
+
+            </a>
+
+          </li>
+
+          <li class="gallery__item">
+            <a href="#" class="gallary__item-list">
+              <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+              <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="#" class="gallary__item-list">
+              <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Мультимедійні проєкти</p>
+              <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="#" class="gallary__item-list">
+              <img src="./images/gallary-4.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+              <h3 class="gallery__title">75-річчя ФК «Шахтар»</h3>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="#" class="gallary__item-list">
+              <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+              <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
+            </a>
+          </li>
+
+          <li class="gallery__item">
+            <a href="#" class="gallary__item-list">
+              <img src="./images/gallary-6.svg" alt="#" class="gallery__img">
+              <p class="gallery__subtitle">Мультимедійні проєкти</p>
+              <h3 class="gallery__title">«Корпорантин»</h3>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="gallery__button-wrapper">
+          <a href="#" class="gallery__btn">Ще проєкти</a>
+        </div>
+
+      </div>
+    </section>
+
+
+
+    <section class="form">
+      <div class="container">
+        <div class="form__wrapper">
+
+          <!-- LEFT SIDE -->
+          <div class="form__info">
+
+            <div class="form__label">
+              <p class="form__lead">Почати спілкування</p>
+            </div>
+
+            <h2 class="form__title">
+              Заповніть форму,<br>
+              і ми скоро відповімо
+            </h2>
+
+            <p class="form__subtitle">
+              Або напишіть нам на пошту:<br>
+              <a href="mailto:mail@emotionlab.com.ua" class="form__mail">
+                mail@emotionlab.com.ua
+              </a>
+            </p>
+
+          </div>
+
+          <!-- RIGHT SIDE -->
+          <div class="form__content">
+
+            <form class="form__contact-form" autocomplete="off">
+
+              <div class="form__field">
+                <input type="text" placeholder="Ваше ім’я" required>
+              </div>
+
+              <div class="form__field">
+                <input type="email" placeholder="Електронна пошта" required>
+              </div>
+
+              <div class="form__field">
+                <label class="form__textarea-label">Текст повідомлення</label>
+                <textarea required></textarea>
+              </div>
+
+              <button type="submit" class="form__btn">
+                Відправити
+              </button>
+
+            </form>
+
+
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+  <footer class="foot">
+    <div class="container foot__container">
+
+      <!-- PDF -->
+      <p class="foot__text">
+        Також візьміть із собою нашу презентацію:<br>
+        <a href="#" class="foot__pdf">
+          EmotionLab Presentation.pdf
+        </a>
+      </p>
+
+      <!-- BIG LOGO -->
+       <div class="foot__logo"></div>
+      <!-- <img src="./images/logo-footer.svg" alt="Emotion Lab" class="foot__logo"> -->
+
+      <!-- BOTTOM ROW -->
+      <div class="foot__bottom">
+        <p class="foot__copyright">
+          Copyright © 2026 Emotion lab
         </p>
 
-        <svg class="foor-img"> 
-            <use href="./images/logo-footer.svg"></use>
-        </svg>
-        <div class="foot__inf">
-            <p class="foot__copy">Copyright © 2026 Emotion lab</p>
-
-            <a href="#" class="foot-policy">Legal Information</a>
-            <a href="#" class="foot-policy">Privacy & Cookie Policy</a>
+        <div class="foot__links">
+          <a href="#" class="foot__link">Legal Information</a>
+          <a href="#" class="foot__link">Privacy & Cookie Policy</a>
         </div>
+      </div>
 
-    </footer>
+    </div>
+  </footer>
+
+
+<div class="offcanvas offcanvas-end mobile-offcanvas"
+     tabindex="-1"
+     id="mobileMenu">
+
+  <div class="mobile-offcanvas__body">
+
+    <div class="mobile__header">
+    <a href="index.html">
+<div class="head__logo-m"></div>  </a>
+
+    <!-- CLOSE -->
+    <div class="mobile-offcanvas__top">
+      <img src="./images/close-white.svg"
+           class="mobile-offcanvas__close close"
+           data-bs-dismiss="offcanvas"
+           alt="close">
+    </div>
+    </div>
+
+    <!-- NAV -->
+    <ul class="mobile-offcanvas__nav">
+      <li><a href="who-we.html">Хто ми</a></li>
+      <li><a href="projects.html">Проєкти</a></li>
+      <li><a href="contacts.html">Контакти</a></li>
+    </ul>
+
+    <!-- LANG -->
+    <div class="mobile-offcanvas__lang">
+      <span class="span">En</span>
+      <span class="span">Ua</span>
+    </div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+  <div class="offcanvas offcanvas-end project__offcanvas" tabindex="-1" id="projectModal">
+
+    <div class="offcanvas-body project__body">
+
+      <!-- CLOSE ICON -->
+      <div class="project__header">
+        <img src="./images/close-icon.svg" alt="Close" class="project__close" data-bs-dismiss="offcanvas">
+      </div>
+      <p class="project__subtitle">Комунікаційні проєкти</p>
+
+      <!-- CONTENT -->
+      <h2 class="project__title">
+        Український Олімпійський Дім 2024
+      </h2>
+
+      <p class="project__text">
+        Надважливий проект для України, українського спорту та діалогу України зі світом.<br><br>
+        Спортивне «посольство» стало епіцентром спортивної дипломатії та медіа центром. Площадка щодня пропонувала
+        тисячам відвідувачів: зустрічі з легендами українського та світового спорту, прем’єри фільмів та арт проектів,
+        перфоманси від українських митців зі всього світу, фестивалі української моди, музики
+        та кухні, дискусії щодо актуальних тем та, звісно, зустрічі з учасниками Олімпійської Збірної України.<br><br>
+        Під час Олімпіади «Український Дім Volya Space» гостинно прийняв більше 20 000 відвідувачів, події Volya Space у
+        медіа дали охват 1 500 000 контактів.
+      </p>
+
+      <!-- <p class="project__text">
+      Спортивне «посольство» стало епіцентром спортивної дипломатії та медіа центром.
+      Площа щодня пропонувала тисячам відвідувачів: зустрічі з легендами українського
+      та світового спорту, премʼєри фільмів та арт проектів.
+    </p> -->
+
+      <img src="./images/projects-1.svg" class="project__big-image" alt="">
+      <img src="./images/projects-2.svg" alt="" class="project__big-image">
+      <img src="./images/projects-3.svg" alt="" class="project__big-image">
+      <img src="./images/projects-4.svg" alt="" class="project__big-image">
+      <div class="projects__box">
+        <img src="./images/projects-5.svg" alt="" class="project__big-image-box">
+        <img src="./images/projects-6.svg" alt="" class="project__big-image-box">
+      </div>
+
+      <img src="./images/projects-7.svg" alt="" class="project__big-image">
+      <img src="./images/projects-8.svg" alt="" class="project__big-image">
+
+      <div class="gallery__label">
+        <p class="gallery__lead">Ще проєкти</p>
+      </div>
+
+      <ul class="gallery__list">
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-2.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
+          </a>
+        </li>
+
+        <li class="gallery__item">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-3.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Мультимедійні проєкти</p>
+            <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>
+          </a>
+        </li>
+
+        <li class="gallery__item itemOne">
+          <a href="#" class="gallary__item-list">
+            <img src="./images/gallary-5.svg" alt="#" class="gallery__img">
+            <p class="gallery__subtitle">Культурні та спортивні заходи</p>
+            <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
+          </a>
+        </li>
+
+      </ul>
+
+    </div>
+  </div>
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
+
 </html>
