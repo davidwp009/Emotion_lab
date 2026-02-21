@@ -20,7 +20,8 @@ html, body {
 /* Шрифти */
 body {
   line-height: 1;
-  font-family: "STIX Two Text", serif;}
+  font-family: "Montserrat", sans-serif;
+}
 
 /* Списки */
 ol, ul {
