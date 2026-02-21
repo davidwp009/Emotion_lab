@@ -107,7 +107,10 @@
     background-color: #7950F2;
     color: #fff;
 }
-
+.active-filter {
+    background-color: #7950F2 !important;
+    color: #fff !important;
+}
 /* GRID */
 
 .gallery__list {

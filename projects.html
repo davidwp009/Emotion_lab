@@ -62,19 +62,21 @@
         <div class="container gallery__container">
 
             <div class="gallery__list-btn">
-                <a href="#" class="gallery__item-btn">Усі проєкти</a>
-                <a href="#" class="gallery__item-btn">Комунікації</a>
-                <a href="#" class="gallery__item-btn">Ділові події</a>
-                <a href="#" class="gallery__item-btn">Культура та спорт</a>
-                <a href="#" class="gallery__item-btn">Корпоративні проєкти</a>
-                <a href="#" class="gallery__item-btn">Освіта</a>
-                <a href="#" class="gallery__item-btn">Мультимедіа</a>
+                <div class="gallery__list-btn">
+            <a class="gallery__item-btn active-filter" data-filter="all">Усі проєкти</a>
+            <a class="gallery__item-btn" data-filter="Комунікації">Комунікації</a>
+            <a class="gallery__item-btn" data-filter="Ділові події">Ділові події</a>
+            <a class="gallery__item-btn" data-filter="Культура та спорт">Культура та спорт</a>
+            <a class="gallery__item-btn" data-filter="Корпоративні проєкти">Корпоративні проєкти</a>
+            <a class="gallery__item-btn" data-filter="Освіта">Освіта</a>
+            <a class="gallery__item-btn" data-filter="Мультимедіа">Мультимедіа</a>
+        </div>
                 <!-- <p class="gallery__item-btn">Обрані проєкти</p> -->
             </div>
 
             <ul class="gallery__list">
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <a href="#" data-bs-toggle="offcanvas" data-bs-target="#projectModal" class="gallery__item-list">
                     <img src="./images/projects/projects-1.svg" alt="1" class="gallery__img">
                     <p class="gallery__subtitle">Комунікаційні проєкти</p>
@@ -82,125 +84,125 @@
                     </a>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Ділові події">
                  <img src="./images/projects/projects-2.svg" alt="2" class="gallery__img">
                     <p class="gallery__subtitle">Бізнес-події, саміти, форуми та конференції</p>
                     <h3 class="gallery__title">Human Resilience Capital Charter on URC2025</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Ділові події">
                     <img src="./images/projects/projects-3.svg" alt="3" class="gallery__img">
                     <p class="gallery__subtitle">Бізнес-події, саміти, форуми та конференції</p>
                     <h3 class="gallery__title">Презентація проєкту Тилигульської ВЕС</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-4.svg" alt="4" class="gallery__img">
-                    <p class="gallery__subtitle">Бізнес-події, саміти, форуми та конференції</p>
+                    <p class="gallery__subtitle">саміти, форуми та конференції</p>
                     <h3 class="gallery__title">Відкриття Покровської СЕС</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-5.svg" alt="5" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Фінал Ліги Чемпіонів 2018</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-6.svg" alt="6" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">«75-річчя ФК «Шахтар»</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-7.svg" alt="7" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Телевізійна премія «Футбольні Зірки України 2017»</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-8.svg" alt="8" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Олімпійське Містечко</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-9.svg" alt="9" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Фан-зона Телеканалів «Футбол 1» та «Футбол 2»</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-10.svg" alt="10" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Юнацький чемпіонат світу з легкої атлетики IAAF 2013</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-11.svg" alt="11" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Виставка сучасного мистецтва Art Point</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Культура та спорт">
                     <img src="./images/projects/projects-12.svg" alt="12" class="gallery__img">
                     <p class="gallery__subtitle">Культурні та спортивні заходи</p>
                     <h3 class="gallery__title">Відкриття скульптури In perspective</h3>
                 </li>
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-13.svg" alt="13" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">П'ятиріччя індустріальної компанії</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-14.svg" alt="14" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">Музей історії компанії</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-15.svg" alt="15" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">Масові заходи у містах присутності бізнесів</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-16.svg" alt="16" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">New Year Broadway Show</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-17.svg" alt="17" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">International New Year Village</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-18svg.svg" alt="18" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">«Корпорантин»</h3>
                 </li>
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-19.svg" alt="19" class="gallery__img">
                     <p class="gallery__subtitle">Корпоративні події та рішения</p>
                     <h3 class="gallery__title">Корпоративний новорічний серіал</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-20.svg" alt="20" class="gallery__img">
                     <p class="gallery__subtitle">Освітні та інформаційні проєкти</p>
                     <h3 class="gallery__title">Освітній серіал для бізнес-академії</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-21.svg" alt="21" class="gallery__img">
                     <p class="gallery__subtitle">Освітні та інформаційні проєкти</p>
                     <h3 class="gallery__title">Навчальні та спортивні фестивалі для молоді</h3>
                 </li>
 
-                <li class="gallery__item">
+                <li class="gallery__item" data-category="Комунікації">
                     <img src="./images/projects/projects-22.svg" alt="22" class="gallery__img">
                     <p class="gallery__subtitle">Освітні та інформаційні проєкти</p>
                     <h3 class="gallery__title">Імерсивна виставка Art of Steel</h3>

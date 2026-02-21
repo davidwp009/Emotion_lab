@@ -1,6 +1,6 @@
 const hero = document.querySelector('.hero-content__back');
 
-// масив твоїх фонів
+
 const backgrounds = [
   './images/projects/projects-7.svg',
   './images/projects/projects-8.svg',
@@ -12,30 +12,41 @@ let index = 0;
 setInterval(() => {
   index = (index + 1) % backgrounds.length;
   hero.style.backgroundImage = `url(${backgrounds[index]})`;
-}, 5000); // 5000 = 5 секунд
+}, 5000); 
 
 
 
+const buttons = document.querySelectorAll('.gallery__item-btn');
+const cards = document.querySelectorAll('.gallery__item');
 
+buttons.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        e.preventDefault();
 
+        const filter = btn.getAttribute('data-filter');
 
+        cards.forEach(card => {
+            const category = card.getAttribute('data-category');
 
+            if (filter === "all" || filter === category) {
+                card.style.display = "flex";
+            } else {
+                card.style.display = "none";
+            }
+        });
 
-
-newFunction();
-
-function newFunction() {
-    const logo = document.querySelector('.head__logo');
-    const video = document.querySelector('.logo-video');
-
-    logo.addEventListener('mouseenter', () => {
-        video.play();
-        video.style.opacity = "1";
+        // toggle active button
+        buttons.forEach(b => b.classList.remove('active-filter'));
+        btn.classList.add('active-filter');
     });
+});
 
-    logo.addEventListener('mouseleave', () => {
-        video.pause();
-        video.currentTime = 0;
-        video.style.opacity = "0";
-    });
-}
+
+
+
+
+
+
+
+
+
