@@ -159,7 +159,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    transition: background-image 1s ease-in-out;
+    transition: background-image 0.1s ease-in-out;
 }
 
 .hero-content__back-subtitle {
@@ -285,7 +285,6 @@
 }
 .portfolio__row:hover{
     transform: scale(1.02);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
 }
 
 .portfolio__accordion .accordion-button{
