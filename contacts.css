@@ -66,9 +66,9 @@
 }
 
 .hero-content__text {
-    font-size: 29px;
+    font-size: 45px;
     font-weight: 400;
-    line-height: 32px;
+    line-height: 50px;
 }
 
 .head__tag:hover{
@@ -91,19 +91,22 @@
 
 .form__wrapper {
     background-color: #F5F3F0;
-    padding: 100px 120px;
+    padding: 95px 120px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 140px;
     align-items: start;
+    margin: 141px 0 75px 0px;
 }
+
+
 
 .form__label {
     display: inline-flex;
-    padding: 10px 18px;
+    padding: 14px 25px;
     border-radius: 100px;
     background-color: #434343;
-    margin-bottom: 77px;
+    margin-bottom: 120px;
 }
 
 .form__lead {
@@ -113,30 +116,40 @@
 }
 
 .form__title {
-    font-size: 35px;
+    font-size: 55px;
     font-weight: 400;
     line-height: 1.2;
     margin-bottom: 125px;
+    line-height: 60px;
 }
 
 .form__subtitle {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 20px;
+    line-height: 100%;
     margin: 0;
 }
 
+
+
 .form__contact-form {
     flex-direction: column;
-    margin-top: 100px;
+    margin-top: 255px;
+
 }
+
+
+
 
 .form__field:nth-child(2) {
-    margin-top: 40px;
-}
-
-.form__field:nth-child(3) {
     margin-top: 62px;
 }
+
+
+.form__field:nth-child(3) {
+    margin-top: 96px;
+}
+
+
 
 .form__field input {
     width: 100%;
@@ -144,9 +157,10 @@
     border-bottom: 1px solid #CFCFCF;
     background: transparent;
     padding: 0 0 12px 0;
-    font-size: 16px;
+    font-size: 22px;
     outline: none;
 }
+
 
 .form__field:first-child input {
     margin-top: 8px;
@@ -156,8 +170,14 @@
     color: #242424;
 }
 
+.form__mail:hover {
+    color: #7950F2;
+}
+
+
+
 .form__textarea-label {
-    font-size: 16px;
+    font-size: 22px;
     margin-bottom: 12px;
     display: block;
 }
@@ -174,11 +194,14 @@
     outline: none;
 }
 
+
 .form__btn {
     margin-top: 35px;
-    padding: 12px 45px;
+
+    padding: 19px 70px;
     border-radius: 100px;
     border: none;
+
     background: #7950F2;
     color: #fff;
     font-size: 18px;
@@ -186,11 +209,22 @@
     transition: 0.3s ease;
 }
 
+.form__btn:hover {
+    opacity: 0.85;
+    background-color: #434343;
+}
+
+
 .form__contact-form::after {
     content: "";
     display: block;
 }
-
+.form__subtitle--mobile {
+    display: none;
+}
+.form__mail:hover {
+    color: #7950F2;
+}
 .foot {
     background-color: #fff;
     padding: 48px 0 48px 0;
@@ -201,15 +235,23 @@
     flex-direction: column;
 }
 
+
+
 .foot__text {
-    font-size: 14px;
-    margin-bottom: 133px;
+    font-size: 20px;
+    margin-bottom: 207px;
 }
 
 .foot__pdf {
     color: #000;
     text-decoration: underline;
 }
+
+.foot__pdf:hover {
+    color: #7950F2;
+}
+
+
 
 .foot__logo {
     background-image: url(./images/logo-footer.svg);
@@ -229,6 +271,8 @@
     height: 220px;
 }
 
+
+
 .foot__bottom {
     display: flex;
     justify-content: space-between;
@@ -236,18 +280,18 @@
 }
 
 .foot__copyright {
-    font-size: 12px;
+    font-size: 18px;
     color: #898989;
     margin: 0;
 }
 
 .foot__links {
     display: flex;
-    gap: 23px;
+    gap: 35px;
 }
 
 .foot__link {
-    font-size: 12px;
+    font-size: 18px;
     color: #000;
     text-decoration: none;
 }

@@ -613,7 +613,9 @@
 .form__subtitle--mobile {
     display: none;
 }
-
+.form__mail:hover {
+    color: #7950F2;
+}
 
 .foot {
     background-color: #fff;
@@ -641,9 +643,7 @@
     color: #7950F2;
 }
 
-.form__mail:hover {
-    color: #7950F2;
-}
+
 
 .foot__logo {
     background-image: url(./images/logo-footer.svg);
@@ -695,7 +695,7 @@
 
 
 .project__offcanvas {
-    width: 1600px !important;
+    width: 1700px !important;
     max-width: 100%;
     transition: transform 0.5s cubic-bezier(.77, 0, .18, 1);
     background: #fff;
