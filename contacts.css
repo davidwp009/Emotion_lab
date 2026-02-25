@@ -8,12 +8,20 @@
 }
 
 .head__logo {
-    height: 25px;
+    background-image: url(./images/logo-footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 180px;
-    background-image: url(./images/logo-header.svg);
+    height: 25px;
 }
 .head__logo:hover{
-    background-image: url(./images/hover-heder-logo.svg);
+    background-image: url(./Animation-Big.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 180px;
+    height: 25px;
 }
 
 .head__nav {
@@ -204,8 +212,21 @@
 }
 
 .foot__logo {
-    width: 994px;
-    margin-bottom: 31px;
+    background-image: url(./images/logo-footer.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1540px;
+    height: 220px;
+    margin-bottom: 48px;
+}
+.foot__logo:hover{
+    background-image: url(./Animation-Big.gif);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 1540px;
+    height: 220px;
 }
 
 .foot__bottom {
